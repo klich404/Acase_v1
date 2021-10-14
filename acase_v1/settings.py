@@ -75,8 +75,15 @@ WSGI_APPLICATION = 'acase_v1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'acase_tests',
+        'USER': 'acase',
+        'PASSWORD': 'acase2021',
+        'HOST': '31.170.165.244',
+        'PORT': '3306',
+        "OPTIONS": {
+            "charset": "utf8mb4",
+        },
     }
 }
 
